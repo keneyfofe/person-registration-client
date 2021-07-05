@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-10 m-auto">
+      <div class="card m-md-auto">
+        <div class="card-header" style="text-align: center">
+          List Of Registered Person
+        </div>
+        <div class="card-body">
+          <table class="table caption-top">
+            <thead>
+              <tr>
+                <th>ID Number</th>
+                <th>Full Name</th>
+                <th>Telephone Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let person of persons">
+                <!--<th scope="row">1</th>-->
+                <td>{{ person.idNumber }}</td>
+                <td>{{ person.fullName }}</td>
+                <td>{{ person.telephoneNumber }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <p style="text-align: center">&copy; 2021 IQBusiness, Inc.</p>
+    </footer>
+  </div>
+</div>
